@@ -3,7 +3,7 @@ organization := "$organization$"
 
 version := "1.0-SNAPSHOT"
 
-lazy val raven = (project in file("modules/carbon	")).enablePlugins(PlayJava, PlayEbean, SbtTwirl)
+lazy val raven = (project in file("modules/raven")).enablePlugins(PlayJava, PlayEbean, SbtTwirl)
 lazy val root = (project in file(".")).enablePlugins(PlayJava, PlayEbean, SbtTwirl).dependsOn(raven).aggregate(raven)
 
 scalaVersion := "2.12.2"
