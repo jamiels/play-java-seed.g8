@@ -240,14 +240,14 @@
 
 <!-- END THEME LAYOUT SCRIPTS -->
 <script>
-    $(document).ready(function()
+    \$(document).ready(function()
     {
 		   @if(flash.containsKey("msg")){
-			   $.notific8('@flash.get("msg")', {life: 5000, zindex: 20500, horizontalEdge: 'top', verticalEdge: 'right'});
+			   \$.notific8('@flash.get("msg")', {life: 5000, zindex: 20500, horizontalEdge: 'top', verticalEdge: 'right'});
 		   }
 
-        $('.btn-add-pos').click(function () {
-            $('#myModal').modal('show');
+        \$('.btn-add-pos').click(function () {
+            \$('#myModal').modal('show');
         })
 
     })
