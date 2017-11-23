@@ -1,0 +1,14 @@
+# No tabs allowed in this file
+- !!models.raven.AppRegistry
+    appName: My App
+    current: true
+- !!models.raven.AuthenticatedUser
+    fname: Alexa
+    lname: Allen
+    email: alexa@overridelabs.com
+    disabled: false
+    password: T}2-111U9%15!^k;
+
+
+
+

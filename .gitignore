@@ -4,3 +4,13 @@ lib_managed/
 src_managed/
 project/plugins/project/
 .idea
+.idea_modules
+/bin/
+.settings
+.eclipse
+.g8
+.classpath
+.cache
+logs/
+server.pid
+RUNNING_PID

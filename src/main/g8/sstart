@@ -1,0 +1,3 @@
+/home/ec2-user/sbt/bin/sbt clean-files clean stage
+/home/ec2-user/zzz/target/universal/stage/bin/askde -Dconfig.resource=prod.conf -Dplay.http.secret.key="zzz!321" -J-server -J-XX:+UseConcMarkSweepGC &
+

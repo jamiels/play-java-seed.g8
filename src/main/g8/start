@@ -1,0 +1,2 @@
+/home/ec2-user/askde/target/universal/stage/bin/askde -Dconfig.resource=prod.conf -J-server -J-XX:+UseConcMarkSweepGC &
+

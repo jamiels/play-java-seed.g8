@@ -1,0 +1,1 @@
+cat /home/ec2-user/zzz/target/universal/stage/RUNNING_PID | xargs kill -SIGTERM
