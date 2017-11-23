@@ -10,20 +10,20 @@ public class AuthenticationController extends BaseAuthentication {
 	
 	public Result login() {
 		Form<LoginForm> loginForm = ff.form(LoginForm.class);
-		loginForm.fill(new LoginForm("ask elliman","Password"));
+		loginForm.fill(new LoginForm("my app","Password"));
 		return ok(login.render(loginForm));
 	}
 	
     public Result authenticate() {	
     	Form<LoginForm> loginForm = ff.form(LoginForm.class).bindFromRequest();
     	if(super.authenticate(loginForm))
-    		return redirect(controllers.askde.routes.AdminPanelController.index());
+    		return redirect("/");
     	else
     		return badRequest(login.render(loginForm));
     }
     
     public Result logout() {
-    	return super.logout(controllers.askde.routes.AuthenticationController.login());
+    	return super.logout(controllers.routes.AuthenticationController.login());
     }
 
 }

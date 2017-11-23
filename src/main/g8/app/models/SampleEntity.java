@@ -3,7 +3,7 @@ package models;
 import java.util.List;
 import javax.persistence.Entity;
 import io.ebean.Finder;
-
+import models.raven.BaseModel;
 
 @Entity
 public class SampleEntity extends BaseModel {
